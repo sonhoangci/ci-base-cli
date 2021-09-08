@@ -1,0 +1,46 @@
+Requirements.
+
+Shell to be written nodeJS, wrap within a npm shell
+
+A. ci-angular-scaffolding shell 
+1. To install
+npm -i ci-angular-scaffolding
+2. options
+-u     --upgrade to newest version of templates and modules
+-c     --create from template
+-i -m [nameOfModule] --install module
+-i -t [nameOfTheme] --install theme
+-s -n -- source for component creation (database tables, ES indexes?, JSON files, URL endpoints)
+-g -c [componentName] -s [sourceName]   -- generate components
+-i -l [libName] --install library
+
+
+B. ci-sql-scaffolding shell
+1. To install
+npm -i ci-sql-scaffolding
+2. Options
+-u     --upgrade to newest version of templates and modules
+-c -- define connection string, needs to run this first before running any install
+-i -s [schemaName] -- install a schema
+-a -- suboptions to install all assets for a given schema
+-sp -- suboptions to install sproc only
+-t -- suboptions to install tables only 
+-tr -- suboptions to install triggers to ES only
+-esi -- suboptions to install scripts to generate ES indexes based on tables or views
+ 
+ 
+C. ci-node-scaffolding shell
+1. To install
+npm -i ci-node-scaffolding
+2. Options
+-g  --- create a new nodeJS project from templates
+-l   -- suboptions to install lambda template
+-e  --suboptions to install Express template
+-u     --upgrade to newest version of templates and modules
+-c -- define connection string, needs to run this first before running any install
+-i -m [schemaName] -- install a module
+-a -- suboptions to install all assets for a given module
+-p -- suboptions to install POST APIs only
+-ess -- suboptions to install to add ES sync triggers
+ 
+
